@@ -1,0 +1,76 @@
+@import url(grid.css);
+
+:root {
+    --mainBackground: #2d3142;
+    --keyBackground: #4f5d75;
+    --keyShadow: #4f5d75b4;
+    --text: #ffffff;
+
+    --playerColor: #fb8500;
+    --playerShadow: #ad6109;
+
+    --middleColor: #edede9;
+    --middleShadow: #edede9b4;
+
+    --cpuColor: #549E87;
+    --cpuShadow: #2E6957;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.return img {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--mainBackground);
+    color: var(--text);
+}
+
+.card {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+.slide-div {
+    position: fixed;
+    left: 66%;
+    top: 11.5%;
+}
+
+.slide-div h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#difficulty-slider {
+    width: 130px;
+}
+
+#settings {
+    position: fixed;
+    top: 14.6%;
+    left: 62%;
+}

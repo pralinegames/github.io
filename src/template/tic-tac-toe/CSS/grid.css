@@ -1,0 +1,55 @@
+.gridRow1, .gridRow5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    margin: 15px 0;
+}
+
+
+.gridRow2, .gridRow3, .gridRow4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+}
+
+.screen, .box {
+    width: 30%;
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--keyBackground);
+    border-radius: 8px;
+}
+
+.box {
+    border: 0;
+    font-family: 'League Spartan';
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--text);
+    box-shadow: 0 10px 0 0 var(--keyShadow);
+    cursor: pointer;
+}
+
+.highlight {
+    filter: brightness(150%);
+}
+
+#playerScreen, #playerWin {
+    background-color: var(--playerColor);
+    box-shadow: 0 10px 0 0 var(--playerShadow);
+}
+
+#turnScreen, #ties  {
+    background-color: var(--middleColor);
+    box-shadow: 0 10px 0 0 var(--middleShadow);
+    color: black;
+}
+
+#cpuScreen, #cpuWin {
+    background-color: var(--cpuColor);
+    box-shadow: 0 10px 0 0 var(--cpuShadow);
+}
