@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/CSS/breakout.css"/>
+    <link rel="icon" href="../../res/favicon.ico" />
+    <title>Breakout - CanvasGame</title>
+</head>
+<body>
+    <a class="return" href="../../index.html">
+        <img src="../../res/Menu/return.png">
+    </a>
+    <div id="score">Score</div>
+    <div id="high-score">Best Score</div>
+    <img id="high-score-img" src="../../res/couronne.png">
+    <div id="timer">Time</div>
+    <canvas id="canvas"></canvas>
+    <div id="start">
+        <img id="gameTitle" src="../../res/Menu/gameTitle.png"><br>
+        <img id="play" class="pausebut" src="../../res/Menu/Playbutton.png"><br>
+    </div>
+    <div hidden id="pause">
+        <img id="pausetext" src="../../res/Menu/Pause.png"><br>
+        <img id="resume" class="pausebut" src="../../res/Menu/reprendre.png"><br>
+        <img id="restart" class="pausebut" src="../../res/Menu/restart.png"><br>
+        <img id="leave" class="pausebut" src="../../res/Menu/leave.png">
+    </div>
+    <div hidden id="notice">
+        Press space to start
+    </div>
+    <div hidden id="win" >
+        <img src="../../res/Menu/You win.png">
+        <div class="blinking">
+            Press R to retry
+        </div>
+    </div>
+    <div hidden id="lose" >
+        <img src="../../res/Menu/You lose.png">
+        <div class="blinking">
+            Press R to retry
+        </div>
+    </div>
+    <div class="level">Level</div>
+    <div class="reset">Reset Best Score</div>
+    <script src="../static/JS/breakout.js"></script>
+</body>
+</html>

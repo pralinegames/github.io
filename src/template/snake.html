@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/CSS/snake.css"/>
+    <link rel="icon" href="../../res/favicon.ico" />
+    <title>Snake - CanvasGame</title>
+</head>
+<body>
+    <a class="return" href="../../index.html">
+        <img src="../../res/Menu/return.png">
+    </a>
+    <canvas id="snake"></canvas>
+    <div id="start">
+        <img id="gameTitle" src="../../res/Menu/snakeTitle.png"><br>
+        <div id="play">
+            <img class="pausebut img-bot" src="../../res/Menu/Play.png">
+            <img class="pausebut img-top" src="../../res/Menu/Playhover.png">
+        </div>
+    </div>
+    <div hidden id="pause">
+        <img id="pausetext" src="../../res/Menu/Pause.png"><br>
+        <img id="resume" class="pausebut" src="../../res/Menu/reprendre.png"><br>
+        <img id="restart" class="pausebut" src="../../res/Menu/restart.png"><br>
+        <img id="leave" class="pausebut" src="../../res/Menu/leave.png">
+    </div>
+    <div id="Win" style="visibility: hidden">
+        <img class="blinking" src="../../res/Menu/SnakeWIn.png">
+        <div>
+            Press R to replay
+        </div>
+    </div>
+    <div id="gameOver" style="visibility: hidden">
+        <img class="blinking" src="../../res/Menu/GameOver.png">
+        <div>
+            Press R to replay
+        </div>
+    </div>
+    <script src="../static/JS/snake.js"></script>
+</body>
+</html>

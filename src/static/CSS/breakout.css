@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background: url(https://opengameart.org/sites/default/files/breakout_bg.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#canvas {
+    background: rgb(0, 0, 0);
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.return img {
+    width: 40px;
+}
+
+#notice {
+    top: 60%;
+}
+
+#pause, #win, #lose, #start, #notice, #replay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#gameTitle {
+    margin-bottom: 50px;
+}
+
+#play {
+    width: 300px;
+}
+
+#start img {
+    max-width: 720px;
+}
+
+#pause #pausetext {
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+#pause .pausebut, #start .pausebut {
+    cursor: pointer;
+    height: 100px;
+}
+
+
+.blinking{
+    animation:blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    0%  {opacity: 1}
+    60% {opacity: 0}
+    100%{opacity: 1}
+}
+
+
+.show {
+    display: block;
+}
+
+#score {
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    top: 3rem;
+    width: 12%;
+    left: 12.5%;
+    text-align: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#high-score {
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    top: 3rem;
+    width: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding: 5px;
+    background: rgba(226, 187, 79, 0.7);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#high-score-img {
+    position: absolute;
+    top: 0.4rem;
+    width: 100px;
+    left: 44%;
+    transform: translate(-44%);
+}
+
+#timer {
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    top: 3rem;
+    width: 12%;
+    right: 13%;
+    text-align: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.reset {
+    cursor: pointer;
+    position: absolute;
+    bottom: 3rem;
+    right: 3%;
+    padding: 10px 20px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.level {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+}

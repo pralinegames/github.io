@@ -1,0 +1,55 @@
+#snake, #gameOver, #Win, #pause, #start {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.return img {
+    width: 40px;
+}
+
+#play .img-top {
+    display: none;
+    z-index: 99;
+}
+#play:hover .img-top {
+    display: inline;
+}
+#play:hover .img-bot {
+    display: none;
+}
+
+body {
+    background: url("../../../res/GUCCI.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     opacity: 1  }
+    50%{    opacity: 0 }
+    100%{   opacity: 1}
+}
+
+#pause #pausetext {
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+#pause .pausebut, #start .pausebut {
+    cursor: pointer;
+    height: 100px;
+}

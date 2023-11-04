@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/CSS/pong.css"/>
+    <link rel="icon" href="../../res/favicon.ico" />
+    <title>Pong - CanvasGame</title>
+</head>
+<body>
+    <a class="return" href="../../index.html">
+        <img src="../../res/Menu/return.png">
+    </a>
+    <div id="player1">Player 1</div>
+    <div id="player2">Player 2</div>
+    <div id="timer">Time</div>
+    <canvas id="canvas"></canvas>
+    <div id="start">
+        <img id="gameTitle" src="../../res/Menu/PongTitle.png"><br>
+        <img id="1player" class="pausebut" src="../../res/Menu/1 Player.png"><br>
+        <img id="2players" class="pausebut" src="../../res/Menu/2 Players.png">
+    </div>
+    <div hidden id="pause">
+        <img id="pausetext" src="../../res/Menu/Pause.png">
+        <img id="resume" class="pausebut" src="../../res/Menu/reprendre.png"><br>
+        <img id="restart" class="pausebut" src="../../res/Menu/restart.png"><br>
+        <img id="leave" class="pausebut" src="../../res/Menu/leave.png">
+    </div>
+    <div hidden id="notice">
+        Press space to start
+    </div>
+    <div hidden id="win" >
+        <img src="../../res/Menu/Player 1 Win.png">
+        <div class="blinking">
+            Press R to replay
+        </div>
+    </div>
+    <div hidden id="win2" >
+        <img src="../../res/Menu/Player 2 Win.png">
+        <div class="blinking">
+            Press R to replay
+        </div>
+    </div>
+    <div hidden id="draw" >
+        <img src="../../res/Menu/Draw.png">
+        <div class="blinking">
+            Press R to replay
+        </div>
+    </div>
+    <script src="../static/JS/pong.js"></script>
+</body>
+</html>
